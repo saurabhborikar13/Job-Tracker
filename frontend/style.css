@@ -1,0 +1,125 @@
+/* General Notion-like Styling */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #37352f;
+    margin: 0;
+    padding: 40px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #2eaadc;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 4px;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background 0.2s;
+}
+
+.btn-primary:hover {
+    background-color: #238db9;
+}
+
+/* Form Container */
+#job-form-container {
+    background: #f7f7f5;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    border: 1px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}
+
+form input, form select {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Grid Layout for Jobs */
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* Job Card Styling */
+.job-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 16px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.03);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.08);
+}
+
+.job-title {
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+}
+
+.job-company {
+    color: #787774;
+    font-size: 0.95rem;
+    margin-bottom: 12px;
+}
+
+/* Status Badges */
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.status-pending { background: #fdecc8; color: #442a0f; } /* Yellow */
+.status-interview { background: #d3f9d8; color: #0c2b12; } /* Green */
+.status-declined { background: #ffe2dd; color: #5d1715; } /* Red */
+
+.delete-btn {
+    margin-top: 10px;
+    background: none;
+    border: none;
+    color: #eb5757;
+    cursor: pointer;
+    font-size: 0.8rem;
+    padding: 0;
+}
+.delete-btn:hover { text-decoration: underline; }
