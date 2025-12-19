@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container" style="max-width: 400px; margin-top: 100px; text-align: center;">
+        <h1>🔐 Welcome Back</h1>
+        <p style="color: #666; margin-bottom: 30px;">Login to manage your applications</p>
+
+        <div id="job-form-container" style="display: block;"> 
+            <form id="login-form">
+                <input type="text" id="name" placeholder="Full Name" required ...>
+                <input type="email" id="email" placeholder="Email" required style="width: 90%; margin-bottom: 15px;">
+                <input type="password" id="password" placeholder="Password" required style="width: 90%; margin-bottom: 15px;">
+                <button type="submit" class="btn-primary" style="width: 100%;">Log In</button>
+            </form>
+            <p id="error-message" style="color: red; margin-top: 10px; font-size: 0.9rem;"></p>
+        </div>
+
+        <p style="margin-top: 20px; font-size: 0.9rem;">
+            Don't have an account? <a href="register.html" style="color: #2eaadc; text-decoration: none;">Register</a>
+        </p>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

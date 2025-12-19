@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
     <div class="container">
         <header>
-            <h1>🚀 Job Applications</h1>
-            <button id="add-btn" class="btn-primary">+ New Job</button>
+            <div>
+                <h1>🚀 Job Applications</h1>
+                <p id="welcome-msg" style="color: #666; font-size: 0.9rem; margin-top: 5px;">Loading user...</p>
+            </div>
+            <div>
+                <button id="add-btn" class="btn-primary">+ New Job</button>
+                <button id="logout-btn"
+                    style="background: #eb5757; color: white; border: none; padding: 10px; border-radius: 4px; cursor: pointer; margin-left: 10px;">Logout</button>
+            </div>
         </header>
 
         <div id="job-form-container" class="hidden">
@@ -36,4 +45,5 @@
 
     <script src="app.js"></script>
 </body>
+
 </html>

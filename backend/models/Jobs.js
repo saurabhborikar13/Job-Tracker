@@ -16,11 +16,17 @@ const JobSchema = new mongoose.Schema({
         enum: ['interview', 'declined', 'pending'], // Only these values are allowed
         default: 'pending'
     },
+    createdBy: {
+        type: mongoose.Types.ObjectId,
+        ref: 'User', // This connects the Job to the User model
+        required: [true, 'Please provide user']
+    },
+
     dateApplied: {
         type: Date,
         default: Date.now // Automatically sets the current date
     }
-});
+},{ timestamps: true });
 
 // so that i can use it in sever.js
 module.exports =  mongoose.model('Job',JobSchema);
